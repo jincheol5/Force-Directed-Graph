@@ -21,4 +21,7 @@ class Graph:
     def set_pos(self,pos):
         self.pos=pos
         
+    def set_M(self,M_dic):
+        self.M_dic=M_dic
+        
     
