@@ -1,2 +1,2 @@
-# Force-Directed-Graph
+# Kamada-Kawai-Algorithm
 Kamada Kawai Force-Directed Graph
