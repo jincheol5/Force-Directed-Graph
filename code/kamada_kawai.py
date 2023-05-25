@@ -202,17 +202,18 @@ def get_M(G):
     return M
 
 
-def update_algorithm(G,pre_pos,display_width,e):
+def update_algorithm(G,pre_pos,display_width,K,e):
     ##kamada kawai algorithm
     #G = class G
     #pre_pos = 초기 pos
     #display_width = 디스플레이 평면의 한 변의 길이
+    #K = spring 강도 상수 
     #e = 종료 조건 값  
 
     # 1. compute d,l,k
     G.set_d(get_d(G))
     G.set_l(get_l(G,display_width))
-    G.set_k(get_k(G,1))
+    G.set_k(get_k(G,K))
 
     # 2. initialize p
     G.set_pos(pre_pos)

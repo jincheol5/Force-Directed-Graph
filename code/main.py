@@ -42,7 +42,7 @@ pos=nx.shell_layout(graph) #shell layout으로 초기화
 G=Graph(graph)
 
 
-G=kk.update_algorithm(G,pos,display_width,e=0.3)
+G=kk.update_algorithm(G,pos,display_width,K=10,e=0.3)
 
 #nx.draw(G.graph,pos,with_labels=True)
 nx.draw(G.graph,G.pos,with_labels=True)
